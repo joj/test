@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--<TextView
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/NomalTextSize"
+        android:text="装置名称:" />-->
+        <TextView
+            android:id="@+id/tvSeBGDeviceName"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/TitleTextSize"
+            android:layout_weight="2"
+            style="@style/BackGroudTextViewLeft" />
+    <!--<TextView
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="@dimen/NomalTextSize"
+        android:layout_weight="1"
+        android:text="装置编码:" />-->
+        <TextView
+            android:id="@+id/tvSeBGDeviceCode"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:layout_weight="2"
+            style="@style/BackGroudTextViewLeft" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BackGroudTextViewLeft">
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" 
+            android:textColor="@color/BackGroudTextColor"
+            android:textSize="@dimen/NomalTextSize"
+            android:text="创建时间:  " />
+        <TextView
+            android:id="@+id/tvSeBGCreateTime"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="2" />
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/BackGroudTextColor"
+            android:textSize="@dimen/NomalTextSize"
+            android:text="检测人:  " />
+        <TextView
+            android:id="@+id/tvSeBGUser"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BackGroudTextViewLeft">
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:text="平均值:  " />
+        <TextView
+            android:id="@+id/tvSeBGAvgValue"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1" />
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:text="风速(m/s):  " />
+        <TextView
+            android:id="@+id/tvSeBGWindSpeed"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1" />
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:text="风     向:  " />
+        <TextView
+            android:id="@+id/tvSeBGWindDir"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/BackGroudTextViewLeft">
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:text="湿度(%):  " />
+        <TextView
+            android:id="@+id/tvSeBGHumidity"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1" />
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:text="大气压(Pa):  " />
+        <TextView
+            android:id="@+id/tvSeBGPress"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1" />
+        <TextView
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/NomalTextSize"
+            android:textColor="@color/BackGroudTextColor"
+            android:text="温度(℃):  " />
+        <TextView
+            android:id="@+id/tvSeBGTemplate"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="@dimen/NomalTextSize"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:paddingRight="10dp"
+            style="@style/BackGroudTextViewLeft" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EDEDED">
+  <include
+      android:id="@+id/GPtoolbar"
+      layout="@layout/toolbar" />
+  <TableLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:stretchColumns="1">
+    <TableRow android:layout_marginTop="8dip" android:visibility="gone">
+      <TextView
+          android:text="生成模式:"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:gravity="right"/>
+      <RadioGroup
+          android:id="@+id/rdGenerateMode"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content"
+          android:layout_span="3"   
+          android:layout_width="match_parent">
+        <RadioButton
+            android:id="@+id/rbModeWaite"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="等待模式"
+            android:enabled="false"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"  android:button="@null"  android:textColor="@drawable/radio_button_text"
+           android:background="@drawable/radio_button_left"    android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rbModeNoWaite"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="不等待模式"
+            android:enabled="false"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1"  android:button="@null"  android:textColor="@drawable/radio_button_text"
+           android:background="@drawable/radio_button_left"    android:gravity="center"/>
+      </RadioGroup>
+    </TableRow>
+    <TableRow android:layout_marginTop="8dip">
+      <TextView
+          android:text="背景值:"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="right|center_vertical" />
+      <PhxGaugingAndroid.Fragments.ClearnEditText
+          android:id="@+id/etGPBackGroud"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content"
+          android:inputType="number|numberDecimal" />
+      <TextView
+          android:text=" "
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/btnGPBackGroud"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="@dimen/ButtonHeight"
+          android:layout_marginLeft="10dip"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:textSize="@dimen/BtnTextSize"
+          android:textColor="#FFFFFF"
+          android:background="@drawable/ButtonStyle"
+          android:textAlignment="gravity"
+          android:text="选择背景值" />
+    </TableRow>
+    <TableRow android:layout_marginTop="8dip">
+      <TextView
+          android:text="开始时间:"
+          android:gravity="right|center_vertical"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/btnGPDate"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_marginLeft="10dp"
+          android:layout_height="@dimen/ButtonHeight"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:enabled="false"
+          android:textSize="@dimen/BtnTextSize"
+          android:background="@drawable/LightButtonStyle"
+          android:textAlignment="gravity" />
+      <TextView
+          android:text=" "
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/btnGPTime"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="@dimen/ButtonHeight"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:enabled="false"
+          android:textSize="@dimen/BtnTextSize"
+          android:background="@drawable/LightButtonStyle"
+          android:textAlignment="gravity" />
+    </TableRow>
+    <TableRow android:layout_marginTop="8dip">
+      <TextView
+          android:text="检测值范围:"
+          android:gravity="right|center_vertical"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <PhxGaugingAndroid.Fragments.ClearnEditText
+          android:id="@+id/EditGPMin"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:textSize="@dimen/TitleTextSize"
+          android:inputType="number"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:text="-"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <PhxGaugingAndroid.Fragments.ClearnEditText
+          android:id="@+id/EditGPMax"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:textSize="@dimen/TitleTextSize"
+          android:inputType="number"
+          android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:layout_marginTop="8dip">
+      <TextView
+          android:text="停留时间(秒):"
+          android:gravity="right|center_vertical"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <PhxGaugingAndroid.Fragments.ClearnEditText
+          android:id="@+id/editGPStateMin"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:textSize="@dimen/TitleTextSize"
+          android:inputType="number"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:text="-"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:textSize="@dimen/TitleTextSize"
+          android:layout_height="wrap_content" />
+      <PhxGaugingAndroid.Fragments.ClearnEditText
+          android:id="@+id/editGPStateMax"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textAlignment="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="2dip"
+          android:layout_marginTop="2dip"
+          android:layout_marginBottom="2dip"
+          android:textSize="@dimen/TitleTextSize"
+          android:inputType="number"
+          android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow android:layout_marginTop="8dip">
+      <LinearLayout
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:layout_span="4">
+        <Button
+            android:id="@+id/btnGPCancel"
+            android:text="返回"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:textSize="@dimen/BtnTextSize"
+            android:textColor="#536FDC"
+            android:background="@drawable/LightButtonStyle"
+            android:textAlignment="gravity" />
+        <Button
+            android:id="@+id/btnGPOk"
+            android:text="生成"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/ButtonHeight"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:textSize="@dimen/BtnTextSize"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/ButtonStyle"
+            android:textAlignment="gravity" />
+      </LinearLayout>
+    </TableRow>
+  </TableLayout>
+</LinearLayout>

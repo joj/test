@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlDiscover"
+    android:background="@color/backGroundColor">
+  <LinearLayout
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+android:layout_height="wrap_content"
+  android:background="@color/backGroundColor"
+          >
+    <ListView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DiscoverBlue"
+    android:layout_marginTop="20dp"
+    android:id="@+id/PhxlistView" />
+    <LinearLayout
+      android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/BigButtonHeight"
+          android:layout_marginLeft="4dip"
+          android:layout_marginRight="4dip"
+          android:layout_marginTop="4dip"
+          android:layout_marginBottom="4dip">
+      <LinearLayout
+       android:layout_height="match_parent"
+          android:layout_width="0dp"
+          android:layout_weight="1" />
+      <Button
+          android:layout_height="match_parent"
+          android:layout_width="0dp"
+          android:layout_weight="14"
+          android:text="搜索检测设备"
+          android:id="@+id/btnRefresh"
+          android:clickable="true"
+          android:layout_marginLeft="2dip"
+              android:layout_marginRight="2dip"
+              android:layout_marginTop="2dip"
+              android:layout_marginBottom="2dip"
+          android:textColor="#FFFFFF"
+          android:textSize="@dimen/TVTextSize"
+          android:background="@drawable/ButtonStyle"
+        />
+      <LinearLayout
+       android:layout_height="match_parent"
+          android:layout_width="0dp"
+          android:layout_weight="1" />
+    </LinearLayout>
+  </LinearLayout>
+  <ImageView
+   android:id="@+id/close"
+   android:layout_width="30dp"
+   android:layout_height="30dp"
+   android:src="@drawable/close"
+   android:layout_gravity="top|right" />
+</FrameLayout>

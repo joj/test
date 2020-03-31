@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backGroundColor">
+    <ListView
+        android:id="@+id/liOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BigButtonHeight">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnImp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:text="导入工单"
+            android:clickable="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/TVTextSize"
+            android:background="@drawable/ButtonStyle" />
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:text="下载工单"
+            android:clickable="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/TVTextSize"
+            android:background="@drawable/ButtonStyle" />
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

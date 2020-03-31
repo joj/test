@@ -1,0 +1,5 @@
+values/strings.xml;values/strings.xml
+drawable/signature_pad_background.xml;drawable/signature_pad_background.xml
+layout/signature_pad_layout.axml;layout/signature_pad_layout.xml
+values/attrs.xml;values/attrs.xml
+values/signature_pad_defaults.xml;values/signature_pad_defaults.xml

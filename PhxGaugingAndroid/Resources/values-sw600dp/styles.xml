@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.Splash" parent="Theme.MyTheme">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  <style name="Theme.MyTheme" parent="Theme.MyTheme.Base"></style>
+  
+  <!-- Base theme applied no matter what API -->
+  <style name="Theme.MyTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowNoTitle">true</item>
+    <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+
+    <item name="windowActionModeOverlay">true</item>
+
+    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+    <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/primary</item>
+    <!-- colorPrimaryDark is used for the status bar -->
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <!-- colorAccent is used as the default value for colorControlActivated 
+         which is used to tint widgets -->
+    <item name="colorAccent">@color/accent</item>
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal. -->
+
+
+    <!-- Option to hide the drop shadow here
+    
+      <item name="actionBarStyle">@style/MyTheme.ActionBar</item>
+      <item name="android:windowContentOverlay">@null</item>
+    -->
+  </style>
+
+  <!--<style name="Theme.MyTheme.ActionBar" parent="style/Widget.AppCompat.Light.ActionBar.Solid">
+    --><!-- remove shadow below action bar --><!--
+    --><!-- <item name="android:elevation">0dp</item> --><!--
+    --><!-- Support library compatibility --><!--
+    <item name="elevation">0dp</item>
+  </style>-->
+  <style name="Head">
+    <item name="android:background">@color/primary</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:paddingTop">6dp</item>
+    <item name="android:paddingBottom">6dp</item>
+  </style>
+  <style name="Bottom">
+    <item name="android:background">@color/TextBackGroundColor</item>
+    <item name="android:layout_gravity">start</item>
+    <item name="android:layout_alignParentBottom">true</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">84dp</item>
+  </style>
+  <style name="Retun_Tools">
+    <item name="android:src">@drawable/ic_return</item>
+  </style>
+  <style name="Operate_btn">
+    <item name="android:src">@drawable/ic_disconnect</item>
+    <item name="android:layout_alignParentRight">true</item>
+  </style>
+  <style name="DiscoverBluetooth">
+    <item name="android:src">@drawable/DiscoverBluetooth</item>
+    <item name="android:layout_alignParentRight">true</item>
+  </style>
+  <style name="Rightarrow">
+    <item name="android:src">@drawable/rightarrow</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginRight">15dp</item>
+    <item name="android:layout_alignParentRight">true</item>
+  </style>
+  <style name="MoreIcon">
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginLeft">8dp</item>
+    <item name="android:layout_alignParentLeft">true</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:scaleType">centerInside</item>
+  </style>
+  <style name="Main_MarginLR">
+    <item name="android:layout_marginLeft">9px</item>
+    <item name="android:layout_marginRight">9px</item>
+  </style>
+  <style name="Main_MarginTopBot">
+    <item name="android:layout_marginTop">9px</item>
+    <item name="android:layout_marginBottom">12px</item>
+  </style>
+
+  <style name="More_TextView">
+    <item name="android:textSize">@dimen/NomalTextSize</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:clickable">true</item>
+    <item name="android:layout_height">60dp</item>
+    <item name="android:layout_marginLeft">8dp</item>
+  </style>
+
+  <style name="More_View">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dip</item>
+    <item name="android:background">#C9C9C9</item>
+    <item name="android:layout_marginLeft">15dp</item>
+  </style>
+
+  <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+    <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    <!--新增一个item，用于控制menu-->
+  </style>
+  <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+    <item name="overlapAnchor">false</item>
+    <!--把该属性改为false即可使menu位置位于toolbar之下-->
+  </style>
+  <style name="RadioButton">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:button">@null</item>
+    <item name="android:paddingStart">45dp</item>
+    <item name="android:paddingEnd">45dp</item>
+    <item name="android:paddingTop">15dp</item>
+    <item name="android:paddingBottom">15dp</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:textColor">@drawable/selector_rb_login_text</item>
+  </style>
+  <style name="LoginText">
+    <item name="android:layout_width">384dp</item>
+    <item name="android:layout_height">75dp</item>
+    <item name="android:layout_marginTop">23dp</item>
+    <item name="android:drawablePadding">12dp</item>
+    <item name="android:imeOptions">actionUnspecified</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:paddingBottom">36dp</item>
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:textSize">21dp</item>
+  </style>
+  <style name="LoginButton">
+    <item name="android:layout_width">375dp</item>
+    <item name="android:layout_height">68dp</item>
+    <item name="android:layout_marginTop">15dp</item>
+    <item name="android:textSize">21dp</item>
+  </style>
+
+  <style name="LoginCheckedTextView">
+    <item name="android:textSize">20sp</item>
+  </style>
+  <style name="LoginTextView">
+    <item name="android:textSize">21dp</item>
+     <item name="android:layout_height">45dp</item> 
+  </style>
+  <style name="NormalButtonStyle">
+    <item name="android:textSize">@dimen/BtnTextSize</item>
+    <item name="android:layout_height">@dimen/ButtonHeight</item>
+    <item name="android:layout_marginLeft">2dip</item>
+    <item name="android:layout_marginRight">2dip</item>
+    <item name="android:layout_marginTop">2dip</item>
+    <item name="android:layout_marginBottom">2dip</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:background">@drawable/ButtonStyle</item>
+  </style>
+  <style name="SwitchStyle" parent="@android:style/Widget.CompoundButton">
+    <item name="android:button">@drawable/switch_button</item>
+  </style>
+  <style name="LoginRadioButton">
+    <item name="android:layout_width">210dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/BtnTextSize</item>
+  </style>
+  <style name="LoginTopTextView">
+    <item name="android:layout_height">450dp</item>
+    <item name="android:textSize">68dp</item>
+  </style>
+  <style name="BackGroudTextViewLeft">
+    <item name="android:paddingLeft">9dp</item>
+  </style>
+  <style name="BackGroudpaddingRight">
+    <item name="android:paddingRight">75dp</item>
+  </style>
+  <style name="selectBackGroudmarginBottom">
+    <item name="android:layout_marginBottom">15dp</item>
+  </style>
+  <style name="ForggetPwdTextCode">
+    <item name="android:layout_width">225dp</item>
+  </style>
+  <style name="RegisterTextCode">
+    <item name="android:layout_width">350dp</item>
+  </style>
+</resources>

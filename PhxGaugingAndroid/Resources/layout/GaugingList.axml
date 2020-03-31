@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include
+      android:id="@+id/Gautoolbar"
+      layout="@layout/toolbar" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"  android:background="@color/BackGroudViewListColor">
+    <TextView
+        android:text="群组"
+        android:textAlignment="textStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/NomalTextSize"
+        style="@style/Main_MarginTopBot"/>
+    <TextView
+        android:text="密封点"
+        android:textAlignment="textEnd"
+        android:layout_width="0dp"
+        android:textSize="@dimen/NomalTextSize"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+         style="@style/Main_MarginTopBot"/>
+    <TextView
+        android:text="净检测值"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/NomalTextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+         style="@style/Main_MarginTopBot"/>
+    <TextView
+        android:text="背景值"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/NomalTextSize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+         style="@style/Main_MarginTopBot"/>
+    <TextView
+        android:text="检测时间"
+        android:textAlignment="textEnd"
+        android:layout_width="0dp"
+        android:textSize="@dimen/NomalTextSize"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        style="@style/Main_MarginTopBot"/>
+  </LinearLayout>
+ 
+  <ListView
+      android:id="@+id/lvGauging"
+      android:layout_height="match_parent"
+      android:layout_width="match_parent" />
+</LinearLayout>

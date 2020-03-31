@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">LDAR检测助手</string>
+  <string name="tab1_title">Phx21</string>
+  <string name="tab2_title">工单</string>
+  <string name="tab3_title">检测</string>
+  <string name="tab4_title">更多</string>
+</resources>

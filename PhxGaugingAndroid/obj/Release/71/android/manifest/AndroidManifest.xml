@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="LDARHelperV6.LDARHelperV6" android:versionCode="6" android:installLocation="preferExternal" android:versionName="6.0">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="23" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.FLASHLIGHT" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <application android:label="LDAR检测助手" android:icon="@drawable/pheonix_logo" android:theme="@style/Theme.MyTheme" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.LDARApplication" android:allowBackup="true">
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.AboutActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.BackGroudGaugingActivityExepc" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.BackGroudGaugingActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.BackGroudListActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.BatchModeActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.CalibrationListActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.CalibrationLogActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.HelperActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTask" android:windowSoftInputMode="stateHidden|adjustPan" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.MainExepcActivity" />
+    <activity android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.ScanBarCodeActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.DetectionActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.DeviceDiagnosticActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.GaugingRecordActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.GeneratePPMActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:noHistory="true" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.LoginActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.PhotoViewActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.CameraActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.PhxLogActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:noHistory="true" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.RegisterActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.SelectBackGroudActivity" />
+    <activity android:label="SignaturePadActivity" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.SignaturePadActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.ExepcModelActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.StayTimeActivity" />
+    <activity android:icon="@drawable/icon" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.TestingTimeActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTask" android:windowSoftInputMode="stateHidden|adjustPan" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.SplashScreen">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTop" android:name="md5374eaaa2d0fff3704e2f1604f3b4c296.VideoActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="LDARHelperV6.LDARHelperV6.mono.MonoRuntimeProvider.__mono_init__" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+  </application>
+</manifest>

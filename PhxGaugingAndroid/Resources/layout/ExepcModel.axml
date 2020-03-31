@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+    <include
+       android:id="@+id/ExepcModeltoolbar"
+       layout="@layout/toolbar" />
+        <View
+            style="@style/More_View" />
+    <TextView
+        android:layout_marginTop="10dp"
+            android:text="请选择检测模式"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TitleTextSize"
+            android:layout_width="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+        
+        <RadioGroup
+              android:id="@+id/radioModel"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent">
+            <RadioButton
+                android:id="@+id/rbFID"
+                android:text="FID"
+                android:textSize="@dimen/NomalTextSize"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/LoginRadioButton"
+                android:button="@null"
+                android:textColor="@drawable/radio_button_text"
+                android:background="@drawable/radio_button_left"
+                android:gravity="center" />
+            <RadioButton
+                android:id="@+id/rbPID"
+                android:text="PID"
+                android:textSize="@dimen/NomalTextSize"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/LoginRadioButton"
+                android:button="@null"
+                android:textColor="@drawable/radio_button_text"
+                android:background="@drawable/radio_button_left"
+                android:gravity="center" />
+            <RadioButton
+                android:id="@+id/rbFIDPID"
+                android:text="FID&amp;PID"
+                android:textSize="@dimen/NomalTextSize"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/LoginRadioButton"
+                android:button="@null"
+                android:textColor="@drawable/radio_button_text"
+                android:background="@drawable/radio_button_left"
+                android:gravity="center" />
+          </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

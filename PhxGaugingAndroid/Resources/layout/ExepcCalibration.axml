@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dip">
+        <Button
+        android:id="@+id/btnReadCalibration"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/NormalButtonStyle"
+        android:layout_height="@dimen/BigButtonHeight"
+        android:text="读取校准" />
+        <Button
+        android:id="@+id/btnSetCalibration"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        style="@style/NormalButtonStyle"
+        android:layout_height="@dimen/BigButtonHeight"
+        android:text="设置校准" />
+    </LinearLayout> 
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText1"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow>
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText2"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow>
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText3"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow >
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText4"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow >
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText5"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow >
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText6"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow >
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText7"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow >
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText8"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+        <TableRow >
+            <PhxGaugingAndroid.Fragments.ClearnEditText
+                android:textSize="@dimen/TitleTextSize"
+                android:id="@+id/CalibrationText9"
+                android:layout_width="200.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10.0dip"
+                android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

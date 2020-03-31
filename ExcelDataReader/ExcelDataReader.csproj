@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Lightweight and fast library written in C# for reading Microsoft Excel files (2.0-2007).</Description>
+    <AssemblyTitle>ExcelDataReader</AssemblyTitle>
+    <VersionPrefix>3.4.0</VersionPrefix>
+    <Authors>ExcelDataReader developers</Authors>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <AssemblyName>ExcelDataReader</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\ExcelDataReader.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>false</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PackageId>ExcelDataReader</PackageId>
+    <PackageTags>excel;xls;xlsx</PackageTags>
+    <PackageIconUrl>https://nugetgallery.blob.core.windows.net/icons/ExcelDataReader.2.1.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/ExcelDataReader/ExcelDataReader</PackageProjectUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <CodeAnalysisRuleSet>..\..\ExcelDataReader.ruleset</CodeAnalysisRuleSet>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net20' ">
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
+    <PackageReference Include="System.Data.Common">
+      <Version>4.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net20'">
+    <PackageReference Include="SharpZipLib">
+      <Version>0.86.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

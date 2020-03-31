@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+  <include
+      android:id="@+id/PhxLogtoolbar"
+      layout="@layout/toolbar" />
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical">
+    <TextView
+        android:text="启用检测设备日志："
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/TitleTextSize"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+    <ToggleButton
+        android:id="@+id/PhxLogEnable"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        style="@style/SwitchStyle"
+        android:background="#00000000"
+        android:textOff="@null"
+        android:textOn="@null" />
+  </RelativeLayout>
+  <View
+      style="@style/More_View" />
+  <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+    <TextView
+        android:text="日志间隔(毫秒)"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/TitleTextSize"
+        android:layout_width="wrap_content" />
+    <EditText
+        android:id="@+id/etLogTime"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        android:textSize="@dimen/TitleTextSize"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+  <View
+      style="@style/More_View" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tvLogFile"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/TitleTextSize"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/btnClearLog"
+        android:text="清理"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/PicBtnWidth"
+        android:background="#00000000"
+        android:textColor="@color/primary"
+        style="@style/NormalButtonStyle" />
+  </LinearLayout>
+  <View
+      style="@style/More_View" />
+  <TextView
+            android:id="@+id/tvPhxLogPath"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:textSize="@dimen/TitleTextSize"/>
+</LinearLayout>

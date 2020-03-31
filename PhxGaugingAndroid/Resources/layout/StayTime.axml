@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+    <include
+        android:id="@+id/STtoolbar"
+        layout="@layout/toolbar" />
+	<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="审核人手写签字"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/TitleTextSize"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+            <ToggleButton
+                android:id="@+id/tbDoubles"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                style="@style/SwitchStyle"
+                android:background="#00000000"
+                android:textOff="@null"
+                android:textOn="@null" />
+        </RelativeLayout>
+	<View
+        style="@style/More_View" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="启用自动检测"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/TitleTextSize"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+        <ToggleButton
+            android:id="@+id/tbEnable"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/SwitchStyle"
+            android:background="#00000000"
+            android:textOff="@null"
+            android:textOn="@null" />
+    </RelativeLayout>
+    <View
+        style="@style/More_View" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="自动检测停留时间"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/TitleTextSize"
+            android:layout_width="wrap_content" />
+        <EditText
+            android:id="@+id/etStayTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:textSize="@dimen/TitleTextSize"
+            android:inputType="number"
+            android:text="8"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        style="@style/More_View" />
+    <LinearLayout
+        android:id="@+id/tvInterval"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="启用连续监测"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/TitleTextSize"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+            <ToggleButton
+                android:id="@+id/tbContinueEnable"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                style="@style/SwitchStyle"
+                android:background="#00000000"
+                android:textOff="@null"
+                android:textOn="@null" />
+        </RelativeLayout>
+        <View
+            style="@style/More_View" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="连续监测间隔时间"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/TitleTextSize"
+                android:layout_width="wrap_content" />
+            <EditText
+                android:id="@+id/etIntervalTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:textSize="@dimen/TitleTextSize"
+                android:inputType="number"
+                android:text="3"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            style="@style/More_View" />
+		
+    </LinearLayout>
+</LinearLayout>
