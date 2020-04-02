@@ -1,7 +1,0 @@
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\bin\Release\netstandard2.0\PhxGauging.Common.deps.json
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\bin\Release\netstandard2.0\PhxGauging.Common.dll
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\bin\Release\netstandard2.0\PhxGauging.Common.pdb
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\obj\Release\netstandard2.0\PhxGauging.Common.AssemblyInfoInputs.cache
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\obj\Release\netstandard2.0\PhxGauging.Common.AssemblyInfo.cs
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\obj\Release\netstandard2.0\PhxGauging.Common.dll
-D:\PhxV7\PhxGaugingV6\PhxGauging.Common\obj\Release\netstandard2.0\PhxGauging.Common.pdb

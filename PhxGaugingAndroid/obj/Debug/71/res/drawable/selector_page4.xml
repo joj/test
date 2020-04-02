@@ -1,1 +1,0 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@mipmap/img4" android:state_enabled="true"></item><item android:drawable="@mipmap/img4select" android:state_enabled="false"></item></selector>
